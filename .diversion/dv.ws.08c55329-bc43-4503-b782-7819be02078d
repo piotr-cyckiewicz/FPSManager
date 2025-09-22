@@ -1,0 +1,14 @@
+{
+  "WorkspaceID": "dv.ws.08c55329-bc43-4503-b782-7819be02078d",
+  "RepoID": "dv.repo.6cf0ce3f-8421-4a7d-a2ca-c6743fb945bd",
+  "Path": "C:\\Users\\anoni\\Documents\\Unreal Projects\\CSSimulator",
+  "AccountID": "Google_107355136549207859911",
+  "BranchID": "dv.branch.1",
+  "BranchName": "main",
+  "CommitID": "dv.commit.1",
+  "Paused": false,
+  "ShouldDownload": true,
+  "RepoName": "FPSManager",
+  "ReadOnly": false,
+  "DigestMethod": "sha1"
+}
