@@ -7,3 +7,8 @@ bool UAvatarTaskNone::ShouldMouseClickTriggerMovement()
 {
 	return true;
 }
+
+bool UAvatarTaskNone::NeedActiveMousePosition()
+{
+	return true;
+}

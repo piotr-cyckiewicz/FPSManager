@@ -12,3 +12,8 @@ bool UAvatarTaskBase::ShouldMouseClickTriggerMovement()
 {
 	return false;
 }
+
+bool UAvatarTaskBase::NeedActiveMousePosition()
+{
+	return false;
+}

@@ -23,4 +23,7 @@ public:
 	///
 	UFUNCTION(BlueprintCallable, BlueprintPure)
 	virtual bool ShouldMouseClickTriggerMovement();
+
+	UFUNCTION(BlueprintCallable, BlueprintPure)
+	virtual bool NeedActiveMousePosition();
 };

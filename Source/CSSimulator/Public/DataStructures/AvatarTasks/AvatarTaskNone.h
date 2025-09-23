@@ -15,8 +15,9 @@ class CSSIMULATOR_API UAvatarTaskNone : public UAvatarTaskBase
 	GENERATED_BODY()
 	
 
-	///
 	// Hints for mouse clicking while this task is actively selected
-	///
 	virtual bool ShouldMouseClickTriggerMovement() override;
+
+	// Needed for visualising path - when no task is actively selected, we assume player wants to move
+	virtual bool NeedActiveMousePosition() override;
 };
