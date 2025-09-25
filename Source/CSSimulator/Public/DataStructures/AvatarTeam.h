@@ -24,4 +24,5 @@ public:
 	void Initialize(FString TeamName);
 	UFUNCTION(BlueprintCallable)
 	void AddPlayer(APlayerAvatar* Player);
+
 };

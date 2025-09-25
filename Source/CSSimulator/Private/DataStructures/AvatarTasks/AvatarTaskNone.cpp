@@ -5,10 +5,10 @@
 
 bool UAvatarTaskNone::ShouldMouseClickTriggerMovement()
 {
-	return true;
+	return false;
 }
 
 bool UAvatarTaskNone::NeedActiveMousePosition()
 {
-	return true;
+	return false;
 }

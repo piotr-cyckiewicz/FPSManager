@@ -7,6 +7,7 @@
 #include "PlayerAvatar.generated.h"
 
 class UAvatarTeam;
+class UAvatarTaskBase;
 
 UCLASS()
 class CSSIMULATOR_API APlayerAvatar : public ACharacter
@@ -21,9 +22,22 @@ protected:
 	UPROPERTY(BlueprintReadWrite)
 	TObjectPtr<UAvatarTeam> Team;
 
+	UPROPERTY(BlueprintReadWrite)
+	TArray<int32> TaskQueuePriority;
+	UPROPERTY(BlueprintReadWrite)
+	TArray<UAvatarTaskBase*> TaskQueue;
+
+
+protected:
+	virtual void BeginPlay() override;
+
 public:	
 	void SetTeam(UAvatarTeam* team);
 
+	UFUNCTION(BlueprintCallable)
+	void AddTask(UAvatarTaskBase* Task);
 
+	UFUNCTION(BlueprintCallable)
+	bool RescheduleTaskUnchecked(int32 TaskID, int32 NewPriority, int32 NewPlacing);
 
 };
