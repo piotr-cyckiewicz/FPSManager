@@ -14,8 +14,7 @@ APlayerAvatar::APlayerAvatar()
 
 void APlayerAvatar::BeginPlay()
 {
-	TaskQueuePriority.Init(0, 0);
-	TaskQueue.Init(CreateDefaultSubobject<UAvatarTaskBase>(FName(TEXT("Name")), false), 0);
+	Super::BeginPlay();
 }
 
 void APlayerAvatar::SetTeam(UAvatarTeam* team)
