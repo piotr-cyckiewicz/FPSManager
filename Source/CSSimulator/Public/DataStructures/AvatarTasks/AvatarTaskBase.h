@@ -26,4 +26,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, BlueprintPure)
 	virtual bool NeedActiveMousePosition();
+
+
+protected:
+	UPROPERTY(BlueprintReadWrite)
+ 	TObjectPtr<UTexture2D> Icon;
 };
