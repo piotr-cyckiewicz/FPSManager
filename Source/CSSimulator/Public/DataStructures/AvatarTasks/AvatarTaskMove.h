@@ -9,7 +9,7 @@
 /**
  * 
  */
-UCLASS(Blueprintable)
+UCLASS(Blueprintable, BlueprintType)
 class CSSIMULATOR_API UAvatarTaskMove : public UAvatarTaskBase
 {
 	GENERATED_BODY()
