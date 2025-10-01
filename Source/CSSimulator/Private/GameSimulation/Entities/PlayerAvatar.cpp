@@ -56,4 +56,6 @@ bool APlayerAvatar::RescheduleTaskUnchecked(int32 TaskID, int32 NewPriority, int
 
 	TaskQueue.RemoveAt(TaskID + 1);
 	TaskQueuePriority.RemoveAt(TaskID + 1);
+
+	return true;
 }
