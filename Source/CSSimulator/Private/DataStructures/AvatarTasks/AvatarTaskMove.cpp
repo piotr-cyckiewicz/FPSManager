@@ -3,11 +3,6 @@
 
 #include "DataStructures/AvatarTasks/AvatarTaskMove.h"
 
-bool UAvatarTaskMove::ShouldMouseClickTriggerMovement()
-{
-	return true;
-}
-
 bool UAvatarTaskMove::NeedActiveMousePosition()
 {
 	return true;

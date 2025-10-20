@@ -21,8 +21,6 @@ public:
 	///
 	// Hints for mouse clicking while this task is actively selected
 	///
-	UFUNCTION(BlueprintCallable, BlueprintPure)
-	virtual bool ShouldMouseClickTriggerMovement();
 
 	UFUNCTION(BlueprintCallable, BlueprintPure)
 	virtual bool NeedActiveMousePosition();

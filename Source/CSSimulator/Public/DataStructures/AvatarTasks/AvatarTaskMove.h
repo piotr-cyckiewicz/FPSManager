@@ -20,9 +20,6 @@ protected:
 
 public:
 
-	// Hints for mouse clicking while this task is actively selected
-	virtual bool ShouldMouseClickTriggerMovement() override;
-
 	// Needed for visualising path
 	virtual bool NeedActiveMousePosition() override;
 
