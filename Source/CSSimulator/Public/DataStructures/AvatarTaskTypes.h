@@ -47,4 +47,46 @@ struct FTaskParameterData {
 		Number = 0;
 		String = FString(TEXT("Invalid Content of this FString"));
 	}
+
+	FTaskParameterData(FName parameterName, ETaskParamaterType parameterType, FVector location) {
+		ParameterName = parameterName;
+		ParameterType = parameterType;
+		Location = location;
+		Number = 0;
+		String = FString(TEXT("Invalid Content of this FString"));
+	}
+
+	FTaskParameterData(FName parameterName, ETaskParamaterType parameterType, float number) {
+		ParameterName = parameterName;
+		ParameterType = parameterType;
+		Location = FVector::Zero();
+		Number = number;
+		String = FString(TEXT("Invalid Content of this FString"));
+	}
+
+	FTaskParameterData(FName parameterName, ETaskParamaterType parameterType, TArray<float> numberList) {
+		ParameterName = parameterName;
+		ParameterType = parameterType;
+		Location = FVector::Zero();
+		Number = 0;
+		NumberList = numberList;
+		String = FString(TEXT("Invalid Content of this FString"));
+	}
+
+	FTaskParameterData(FName parameterName, ETaskParamaterType parameterType, FString string) {
+		ParameterName = parameterName;
+		ParameterType = parameterType;
+		Location = FVector::Zero();
+		Number = 0;
+		String = string;
+	}
+
+	FTaskParameterData(FName parameterName, ETaskParamaterType parameterType, TArray<FString> stringList) {
+		ParameterName = parameterName;
+		ParameterType = parameterType;
+		Location = FVector::Zero();
+		Number = 0;
+		String = FString(TEXT("Invalid Content of this FString"));
+		StringList = stringList;
+	}
 };
