@@ -49,6 +49,14 @@ struct FTaskParameterData {
 		String = FString(TEXT("Invalid Content of this FString"));
 	}
 
+	FTaskParameterData(FName parameterName, ETaskParamaterType parameterType) {
+		ParameterName = parameterName;
+		ParameterType = parameterType;
+		Location = FVector::Zero();
+		Number = 0;
+		String = FString(TEXT("Invalid Content of this FString"));
+	}
+
 	FTaskParameterData(FName parameterName, FVector location) {
 		ParameterName = parameterName;
 		ParameterType = ETaskParamaterType::Location;
