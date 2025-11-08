@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
+#include "DataStructures/AvatarTaskTypes.h"
 #include "AvatarTaskBase.generated.h"
 
 /**
@@ -29,4 +30,7 @@ public:
 protected:
 	UPROPERTY(BlueprintReadWrite)
  	TObjectPtr<UTexture2D> Icon;
+
+	UPROPERTY(BlueprintReadWrite)
+	TArray<FTaskParameterData> Parameters;
 };
