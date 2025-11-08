@@ -13,6 +13,9 @@ UCLASS(Blueprintable, BlueprintType)
 class CSSIMULATOR_API UAvatarTaskMove : public UAvatarTaskBase
 {
 	GENERATED_BODY()
+
+public:
+	UAvatarTaskMove();
 	
 protected:
 	FVector Goal;
