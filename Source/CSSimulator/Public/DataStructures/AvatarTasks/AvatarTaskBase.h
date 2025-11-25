@@ -28,9 +28,9 @@ public:
 
 
 protected:
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly)
  	TObjectPtr<UTexture2D> Icon;
 
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly)
 	TArray<FTaskParameterData> Parameters;
 };
