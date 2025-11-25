@@ -2,8 +2,3 @@
 
 
 #include "DataStructures/AvatarTasks/AvatarTaskNone.h"
-
-bool UAvatarTaskNone::NeedActiveMousePosition()
-{
-	return false;
-}

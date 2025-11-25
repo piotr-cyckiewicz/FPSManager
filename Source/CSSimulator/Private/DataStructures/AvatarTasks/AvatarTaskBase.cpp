@@ -7,8 +7,3 @@ UAvatarTaskBase::UAvatarTaskBase()
 {
 
 }
-
-bool UAvatarTaskBase::NeedActiveMousePosition()
-{
-	return false;
-}

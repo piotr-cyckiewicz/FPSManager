@@ -14,6 +14,4 @@ class CSSIMULATOR_API UAvatarTaskNone : public UAvatarTaskBase
 {
 	GENERATED_BODY()
 
-	// Needed for visualising path - when no task is actively selected, we assume player wants to move
-	virtual bool NeedActiveMousePosition() override;
 };

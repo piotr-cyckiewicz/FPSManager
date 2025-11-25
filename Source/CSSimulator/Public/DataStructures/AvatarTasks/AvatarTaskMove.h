@@ -23,9 +23,6 @@ protected:
 
 public:
 
-	// Needed for visualising path
-	virtual bool NeedActiveMousePosition() override;
-
 	UFUNCTION(BlueprintCallable)
 	void SetGoalPosition(FVector Position);
 };

@@ -17,14 +17,6 @@ class CSSIMULATOR_API UAvatarTaskBase : public UObject
 
 public:
 	UAvatarTaskBase();
-	
-
-	///
-	// Hints for mouse clicking while this task is actively selected
-	///
-
-	UFUNCTION(BlueprintCallable, BlueprintPure)
-	virtual bool NeedActiveMousePosition();
 
 
 protected:

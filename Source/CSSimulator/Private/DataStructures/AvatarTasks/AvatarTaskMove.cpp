@@ -8,11 +8,6 @@ UAvatarTaskMove::UAvatarTaskMove()
 	
 }
 
-bool UAvatarTaskMove::NeedActiveMousePosition()
-{
-	return true;
-}
-
 void UAvatarTaskMove::SetGoalPosition(FVector Position)
 {
 	Goal = Position;
