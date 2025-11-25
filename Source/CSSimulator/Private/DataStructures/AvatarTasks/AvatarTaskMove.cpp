@@ -5,7 +5,7 @@
 
 UAvatarTaskMove::UAvatarTaskMove()
 {
-	Parameters.Add(FTaskParameterData(FName(TEXT("Destination")), FVector(0, 0, 0)));
+	
 }
 
 bool UAvatarTaskMove::NeedActiveMousePosition()
